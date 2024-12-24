@@ -9,51 +9,256 @@
             margin: 0;
         }
 
-        .main-box {
+        header {
+            position: relative;
             box-sizing: border-box;
-            padding: 5px 0px;
-            height: 150px;
+            padding: 5px 15px;
             background-color: #3a75b0;
         }
-        .rogo-img-st{
+
+        .logo {
+            display: inline-block;
+            margin: 0;
+            width: 125px;
+            height: 73px;
+            background-image: url(https://www.java.com/_cache_8a03/_themesdelivery/JCOM_Base_Theme/assets/img/Java-horz-wht.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-y: -5px;
+        }
+
+        .logo-link {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        nav {
+            position: absolute;
+            top: 15px;
+            display: inline-block;
+            padding: 5px 0 0 20px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .nav-item {
+            display: inline-block;
+        }
+
+        .nav-link {
+            display: inline-block;
+            margin: 0px 10px;
+            padding: 5px;
+            font-size: 30px;
+            text-decoration: none;
+            color: #ffffff;
+
+            &:hover {
+                color: #f48618;
+            }
+        }
+
+        .main-search {
+            position: absolute;
+            top: 25px;
+            right: 30px;
             box-sizing: border-box;
-            width: 73;
-            height: 125;
+            width: 200px;
+            height: 40px;
+            padding-left: 50px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        main {
+            padding: 48px 0px;
+            background-color: #ffffff;
+        }
+
+        article {
+            margin: 0px auto;
+            width: 1344px;
+        }
+
+        section {
+            display: inline-block;
+            width: fit-content;
+        }
+
+        .update-link {
+            text-decoration: none;
+            color: #006b8f;
+            font-size: 16px;
+        }
+
+        .main-title {
+            padding: 0px 40px;
+            font-size: 44px;
+            font-weight: 300;
+            color: #7A736E;
+            letter-spacing: 2px;
+        }
+
+        .java-download-button {
+            display: block;
+            box-sizing: border-box;
+            margin: 40px auto 30px;
+            border: none;
+            border-radius: 4px;
+            padding: 12px 16px;
+            width: 224px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #198754;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #13633e;
+            }
+        }
+
+        .help-link-group {
+            margin: 0px auto 17.6px;
+            width: fit-content;
+        }
+
+        .division-line {
+            display: inline-block;
+            margin: 0px 5px;
+            height: 12px;
+            border-left: 2px solid #006b8f;
+        }
+
+        .help-link {
+            text-decoration: none;
+            font-size: 16px;
+            color: #006b8f;
+        }
+
+        .main-img {
+            display: inline-block;
+            width: 330px;
+            height: 303px;
             overflow: hidden;
-            background-color: #3a75b0;
-        }
-        .rogo-img {
-            width: 73px;
-        }
-        
-        .sub-box1 {
-            width: 100%;
-            height: 426.7px;
-            background-color: white;
         }
 
-        .sub-box2 {
-            width: 100%;
-            height: 120px;
-            background-color: #7a736a;
+        .jdk-footer {
+            padding: 22px 0px;
+            background-color: #7A736E;
+            letter-spacing: 0;
         }
 
-        .sub-box3 {
-            width: 100%;
-            height: 104px;
+        .jdk-footer-container {
+            margin: 0px auto;
+            width: fit-content;
+        }
+
+        .jdk-footer-img {
+            display: inline-block;
+        }
+
+        .jdk-footer-title {
+            display: inline-block;
+            margin: 0px 20px;
+            font-weight: 600;
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        .jdk-footer-button {
+            margin-right: 14px;
+            border: 1px solid #ffffff;
+            border-radius: 3px;
+            padding: 12px 16px;
+            height: 43px;
+            background-color: transparent;
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        .company-info-footer {
+            padding: 40px 48px;
             background-color: #eeeeee;
+        }
+
+        .company-info-link-group {
+            margin: 0px auto;
+            width: 1344px;
+        }
+
+        .company-info-link {
+            padding: 0px 5px;
+            color: #2d5986;
+            text-decoration: none;
+            font-size: 11.2px;
         }
 
     </style>
 </head>
 <body>
-    <div class="main-box">
-        <div class="rogo-img-st">
-            <img class="rogo-img" src ="data:image/png;base64,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" art=""></div>
-    </div>  
-    </div>
-    <div class="sub-box1"></div>
-    <div class="sub-box2"></div>
-    <div class="sub-box3"></div>
+    <header>
+        <h1 class="logo">
+            <a href="" class="logo-link"></a>
+        </h1>
+        <nav>
+            <ul>
+                <li class="nav-item">
+                    <a href="" class="nav-link">다운로드</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Developer Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">도움말</a>
+                </li>
+            </ul>
+        </nav>
+        <input type="text" class="main-search" placeholder="검색">
+    </header>
+    <main>
+        <article>
+            <section>
+                <a href="" class="update-link">macOS의 일부 Java8 사용자에게 필요한 수동 업데이트</a>
+                <h1 class="main-title">데스크톱 애플리케이션용 Java 얻기</h1>
+                <button class="java-download-button">Java 다운로드</button>
+                <div class="help-link-group">
+                    <a href="" class="help-link">Java란?</a>
+                    <div class="division-line"></div>
+                    <a href="" class="help-link">설치 해제 도움말</a>
+                </div>
+            </section>
+            <div class="main-img">
+                <img src="https://www.java.com/content/published/api/v1.1/assets/CONTAC42441D88644D75A6C7B964A1FA1601/native?cb=_cache_9929&channelToken=1f7d2611846d4457b213dfc9048724dc" alt="">
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="jdk-footer">
+            <div class="jdk-footer-container"> 
+                <div class="jdk-footer-img">
+                    <img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0nNDAnIGhlaWdodD0nNTUnIHZpZXdCb3g9JzAgMCA0MCA1NScgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMjcuMzM5OCAzNy43MjE5QzI1Ljk5ODUgMzguMTAxNyAyMi45NzczIDM4LjcyMTEgMTguNjU3MSAzOC43MjExQzE0LjQxNzMgMzguNzIxMSAxMC45NTMgMzcuOTk1MyAxMC45NDIyIDM3LjE0MDZDMTAuOTM1IDM2LjU3MjEgMTEuNjIyNCAzNi4zMjQzIDExLjYyMjQgMzYuMzI0M0wxMS41MDAxIDM2LjI1MzNDOS40Njk4NCAzNi42MTIyIDcuNTgzODIgMzcuMTY2OSA3LjU5NDcyIDM3Ljk5NzRDNy42MTM1MiAzOS41MDQ0IDEzLjM3NjUgNDAuNjM2MiAxOC42NDg4IDQwLjYzNjJDMjMuMTMxIDQwLjYzNjIgMjcuNDM1OCAzOS44ODQxIDI5LjM3NzYgMzguODk4OUwyNy4zMzk4IDM3LjcyMTlaTTEzLjAxMTggNDIuMzgxQzEyLjA3MDIgNDIuNTY4NCAxMC4wMTgxIDQzLjAzOTYgMTAuMDE4MSA0NC4wMzc1QzEwLjAxODEgNDUuNDE5OCAxNC40MDg2IDQ2LjQ3ODUgMTguNjQ3MSA0Ni40Nzg1QzI0LjQ3OTQgNDYuNDc4NSAyNi44NjgyIDQ0Ljk3NzggMjYuOTc2MyA0NC45MDAxTDI0LjU1MTIgNDMuNDk3MUMyMy41MTk5IDQzLjc0MjggMjEuNzgyMSA0NC4xMjg5IDE4LjY1MjkgNDQuMTI4OUMxNS4xNjA2IDQ0LjEyODkgMTIuODg1MyA0My41MzA4IDEyLjg4NTMgNDIuODc2QzEyLjg4NTMgNDIuNzM3IDEyLjk3MjEgNDIuNTcyMiAxMy4xMzQgNDIuNDUxN0wxMy4wMTE4IDQyLjM4MVpNMzYuODQ0NyAzMy4wODAzQzM2LjY4MTUgMzYuMjEwNCAzMy43ODk3IDM4LjE1OTMgMzAuODk5MyAzOS44MDYxTDMxLjE2MTQgMzkuOTU3MkMzNC4yNDU1IDM5LjA4OTYgMzkuNzQ4NSAzNi41NjI5IDM5LjI5MzYgMzIuNjc5MkMzOS4wNjcgMzAuNzQyNCAzNy4yOTY3IDI5LjM1ODUgMzQuOTg4OCAyOS4zNTg1QzM0LjI3MDEgMjkuMzU4NSAzMy42MzA3IDI5LjQ4NTMgMzMuMTEyNCAyOS42NDMxTDMzLjExMDggMjkuNjQ4MUwzMy4wMDE0IDI5LjkyMzZDMzUuMDY1NiAyOS41MTk2IDM2Ljk1MTkgMzEuMDI3IDM2Ljg0NDcgMzMuMDgwM1YzMy4wODAzWk0xOC41Njc0IDUxLjQ0OUMyNi42ODA0IDUxLjM3ODUgMzUuNzU3OSA0OS43OTA1IDM1LjczNDUgNDcuMTIxNkMzNS43MzAzIDQ2LjYzNzkgMzUuNDE1MyA0Ni4zMDY2IDM1LjE0MTUgNDYuMTA2M0wzNS4wMDg0IDQ2LjE4MjZDMzQuMjU4NCA0OC4yNTAxIDI3LjkxOSA0OS43Nzc2IDE4LjU1MzYgNDkuODU5M0MxMi41MTA1IDQ5LjkxMiA0LjEzOTU2IDQ4LjQ2NDIgNC4xMjQ5MiA0Ni43OTExQzQuMTEwMjkgNDUuMTEzOCA4LjA5MDQ1IDQ0LjE5MiA4LjA5MDQ1IDQ0LjE5Mkw3LjgwOTI1IDQ0LjAzMTNDNS4xNDIwMyA0NC4zOTg1IDAuMjI3NDUzIDQ1LjY3NTkgMC4yNDM2OTIgNDcuNTIwMkMwLjI2NzA5IDUwLjE4NjYgMTEuNTYyIDUxLjUxMDQgMTguNTY3NCA1MS40NDlWNTEuNDQ5Wk0xNy43MjM0IDUzLjM1NDVDMTQuNDk4NyA1My4zODMgMTAuNTYxMSA1My4xMTU5IDcuMjQ4NjcgNTIuNTU5MUw2Ljk0MTk0IDUyLjczNTZDMTAuMjQxNCA1My43MDMxIDE0LjgzNTEgNTQuMjg3NCAxOS44ODI4IDU0LjI0MzVDMjkuNzk1OSA1NC4xNTY3IDM3LjgzMjkgNTEuNjk4NSAzNy45OTE5IDQ4Ljc0MDFMMzcuODc3MSA0OC42NzMzQzM3LjIxMjcgNDkuNDg0MiAzMi45MjUxIDUzLjIyMTkgMTcuNzIzNCA1My4zNTQ1VjUzLjM1NDVaTTUuMzA0NzQgMzIuMzY2NkM1LjMwNDc0IDMwLjg3MTMgMTAuOTc2OCAzMC4wMzI0IDEzLjYxNzcgMjkuODI5MkwxMy44Njk4IDI5Ljk3NDhDMTIuODU1MiAzMC4xNTk0IDguNzg0OSAzMC44NzcyIDguNzg0OSAzMS44MTM2QzguNzg0OSAzMi44MzMyIDE1LjAyNzkgMzMuNTAxNCAxOC42NTE3IDMzLjUwMTRDMjQuODA2NSAzMy41MDE0IDI4Ljk5MDMgMzIuNTY5OCAzMC4xMTU1IDMyLjI2MjdMMzEuNjg5NyAzMy4xNzg4QzMwLjYxMTcgMzMuNzA2NyAyNS45ODM1IDM1LjA5MDIgMTguNjUyMSAzNS4wOTAyQzEwLjUwMzkgMzUuMDkwMiA1LjMwNDc0IDMzLjQ5NTkgNS4zMDQ3NCAzMi4zNjY2JyBmaWxsPSd3aGl0ZScvPjxwYXRoIGQ9J00yOS45Mjc3IDExLjQ2NjRMMjkuNzkxMyAxMS4zODg0QzI3LjMxMzEgMTIuMjE4NCAxOS42ODU0IDE1LjIyOTEgMTkuNjg1NCAyMC44NDI3QzE5LjY4NTQgMjQuMDE3OCAyMi43ODU4IDI1Ljc3NiAyMi43ODU4IDI4Ljc1MzRDMjIuNzg1OCAyOS44MTU1IDIyLjE4NjEgMzAuODExMiAyMS42OTc5IDMxLjQwNjRMMjEuOTQzMyAzMS41NDgzQzIzLjIzMzcgMzAuNzA5NCAyNS41MTg1IDI4Ljg5MzEgMjUuNTE4NSAyNi41NDgxQzI1LjUxODUgMjQuNTYyNCAyMi43NyAyMi4xNzY1IDIyLjc3IDE5LjYyNEMyMi43NyAxNS42MDIyIDI4LjA3MzEgMTIuNDQ2NyAyOS45Mjc3IDExLjQ2NjRWMTEuNDY2NFpNMjYuMTgzNCA0LjEwODcyQzI2LjE4MzQgMTIuNDE3IDE0Ljc5NzYgMTUuNTk2MyAxNC43OTc2IDIxLjUwMzNDMTQuNzk3NiAyNS42NSAxNy41NDc0IDI4LjI1MDUgMTkuMDY4NiAyOS44OTQzTDE4Ljk0NSAyOS45NjU3QzE3LjAyNDQgMjguNzY0MiAxMS45NzA5IDI1Ljc0NDggMTEuOTcwOSAyMC43NTcyQzExLjk3MDkgMTMuNzU1MSAyNS4wNDg2IDEwLjQwOTIgMjUuMDQ4NiAyLjQ1NTZDMjUuMDQ4NiAxLjQ3Njk2IDI0LjkwMzggMC43MjY5NTUgMjQuODAyNCAwLjMyMjE0M0wyNC45MzQ3IDAuMjQ1ODYyQzI1LjM0OTEgMC43NjY3IDI2LjE4MzQgMi4wNjg3NCAyNi4xODM0IDQuMTA4NzInIGZpbGw9J3doaXRlJy8+PC9zdmc+Cg==" alt="">
+                </div>
+                <h3 class="jdk-footer-title">JDK 다운로드를 찾는 소프트웨어 개발자입니까?</h3>
+                <button class="jdk-footer-button">OpenJDK 초기 액세스 구축</button>
+                <button class="jdk-footer-button">Java SE Development Kit</button>
+            </div>
+        </div>
+        <div class="company-info-footer">
+            <div class="company-info-link-group">
+                <a href="" class="company-info-link">ⓒ Oracle</a>
+                <a href="" class="company-info-link">언어 선택</a>
+                <a href="" class="company-info-link">지원</a>
+                <a href="" class="company-info-link">개인 정보 보호 정책</a>
+                <a href="" class="company-info-link">쿠키 환경설정</a>
+                <a href="" class="company-info-link">사용 약관</a>
+                <a href="" class="company-info-link">등록 상표</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
